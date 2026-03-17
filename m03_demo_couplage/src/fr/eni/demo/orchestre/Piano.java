@@ -1,6 +1,6 @@
 package fr.eni.demo.orchestre;
 
-public class Piano {
+public class Piano implements Instrument {
     public void afficher() {
         System.out.println("Je suis un piano...");
     }

@@ -1,6 +1,6 @@
 package fr.eni.demo.orchestre;
 
-public class Violon {
+public class Violon implements Instrument {
     public void afficher() {
         System.out.println("Je suis un violon...");
     }
