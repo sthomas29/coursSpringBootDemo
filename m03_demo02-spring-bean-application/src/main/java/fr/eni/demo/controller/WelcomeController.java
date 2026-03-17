@@ -1,9 +1,11 @@
 package fr.eni.demo.controller;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 // Grâce à @Component, Cette classe est identifiée comme un Bean dans le conteneur Spring
 @Component
+@Scope("prototype")
 public class WelcomeController {
 
     public void welcome() {
