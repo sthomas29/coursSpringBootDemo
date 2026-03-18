@@ -4,3 +4,6 @@ documentations/
 **/idea/
 
 **/out/
+
+.gradle/
+build/
