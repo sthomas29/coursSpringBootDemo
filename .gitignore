@@ -1,2 +1,9 @@
 documentations/
-./**/.idea/
+
+.idea/
+**/idea/
+
+**/out/
+
+.gradle/
+build/
