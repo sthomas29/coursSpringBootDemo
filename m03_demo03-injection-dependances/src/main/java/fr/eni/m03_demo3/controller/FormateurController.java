@@ -11,8 +11,6 @@ import fr.eni.m03_demo3.bo.Formateur;
 @Component
 public class FormateurController {
 
-    // Injection du service avec annotation
-    @Autowired
     private FormateurService formateurService;
 
     public void afficherFormateurs() {
@@ -22,4 +20,12 @@ public class FormateurController {
         }
         System.out.println(lstFormateurs);
     }
+
+    // Injection de dépendances par le setter
+    @Autowired
+    public void setFormateurService(FormateurService formateurService) {
+        System.out.println("Appel de setFormateurService");
+        this.formateurService = formateurService;
+    }
+
 }
