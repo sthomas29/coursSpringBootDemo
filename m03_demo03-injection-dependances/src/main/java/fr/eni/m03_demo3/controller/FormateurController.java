@@ -13,6 +13,12 @@ public class FormateurController {
 
     private FormateurService formateurService;
 
+    // Injection via le constructeur directement
+    public FormateurController(FormateurService formateurService) {
+        System.out.println("Appel du constructeur FormateurController");
+        this.formateurService = formateurService;
+    }
+
     public void afficherFormateurs() {
         List<Formateur> lstFormateurs = formateurService.getFormateurs();
         for  (Formateur formateur : lstFormateurs) {
@@ -20,12 +26,4 @@ public class FormateurController {
         }
         System.out.println(lstFormateurs);
     }
-
-    // Injection de dépendances par le setter
-    @Autowired
-    public void setFormateurService(FormateurService formateurService) {
-        System.out.println("Appel de setFormateurService");
-        this.formateurService = formateurService;
-    }
-
 }
