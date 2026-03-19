@@ -16,7 +16,10 @@ public class FormateurController {
     // Pour lever l'ambiguîté du Bean à injecter, on ajouter l'annotation @Qualifier
     // pour spécifier l'instance concrète à injecter.
 
-    public FormateurController(@Qualifier("formateurServiceImpl")  FormateurService formateurService) {
+    // En forçant l'implémentation de FormateurServiceImpl avec @Primary, on s'affranchit de @Qualifier
+    //@Qualifier("formateurServiceImpl")
+
+    public FormateurController(  FormateurService formateurService) {
         System.out.println("Appel du constructeur FormateurController");
         this.formateurService = formateurService;
     }
