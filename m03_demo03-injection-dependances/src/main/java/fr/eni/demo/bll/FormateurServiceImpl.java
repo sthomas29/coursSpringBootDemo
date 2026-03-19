@@ -2,9 +2,11 @@ package fr.eni.demo.bll;
 
 import fr.eni.demo.bo.Formateur;
 import fr.eni.demo.dal.FormateurDAO;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class FormateurServiceImpl implements FormateurService {
     private FormateurDAO formateurDAO;
 
