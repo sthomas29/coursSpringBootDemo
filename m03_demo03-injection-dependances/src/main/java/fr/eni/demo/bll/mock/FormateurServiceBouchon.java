@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import fr.eni.demo.bll.FormateurService;
 import fr.eni.demo.bo.Formateur;
 
-@Service
+//@Service
 @Profile("dev")
 public class FormateurServiceBouchon implements FormateurService {
     // Solution temporaire - gestion d'une liste de formateur locale

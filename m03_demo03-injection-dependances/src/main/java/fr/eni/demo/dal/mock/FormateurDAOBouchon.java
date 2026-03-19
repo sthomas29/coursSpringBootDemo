@@ -1,12 +1,12 @@
-package fr.eni.demo.dal;
+package fr.eni.demo.dal.mock;
 
 import fr.eni.demo.bo.Formateur;
-import org.springframework.stereotype.Repository;
+import fr.eni.demo.dal.FormateurDAO;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
+//@Repository
 public class FormateurDAOBouchon implements FormateurDAO {
 
     // Solution temporaire - gestion d'une liste de formateur locale

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 // Ajout @Primary pour imposer à Spring l'utilisation de ce Bean.
-@Service
+//@Service
 @Profile("default")
 public class FormateurServiceImpl implements FormateurService {
     private FormateurDAO formateurDAO;

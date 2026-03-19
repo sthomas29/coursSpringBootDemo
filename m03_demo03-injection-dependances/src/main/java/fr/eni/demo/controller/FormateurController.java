@@ -29,6 +29,6 @@ public class FormateurController {
         for  (Formateur formateur : lstFormateurs) {
             System.out.println(formateur);
         }
-        System.out.println(lstFormateurs);
+        //System.out.println(lstFormateurs);
     }
 }
