@@ -1,4 +1,4 @@
-package fr.eni.m03_demo3.bo;
+package fr.eni.demo.bo;
 
 public class Formateur {
     private String nom;

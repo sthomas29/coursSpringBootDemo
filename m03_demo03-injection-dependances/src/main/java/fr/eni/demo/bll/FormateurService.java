@@ -1,8 +1,8 @@
-package fr.eni.m03_demo3.bll;
+package fr.eni.demo.bll;
 
 import java.util.List;
 
-import fr.eni.m03_demo3.bo.Formateur;
+import fr.eni.demo.bo.Formateur;
 
 public interface FormateurService {
     void add(String nom, String prenom, String email);

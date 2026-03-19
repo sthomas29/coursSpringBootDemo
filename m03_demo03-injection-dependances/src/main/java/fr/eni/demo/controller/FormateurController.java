@@ -1,12 +1,11 @@
-package fr.eni.m03_demo3.controller;
+package fr.eni.demo.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import fr.eni.m03_demo3.bll.FormateurService;
-import fr.eni.m03_demo3.bo.Formateur;
+import fr.eni.demo.bll.FormateurService;
+import fr.eni.demo.bo.Formateur;
 
 @Component
 public class FormateurController {

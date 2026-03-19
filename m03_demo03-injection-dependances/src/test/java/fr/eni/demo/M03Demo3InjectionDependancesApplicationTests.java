@@ -1,4 +1,4 @@
-package fr.eni.m03_demo3;
+package fr.eni.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

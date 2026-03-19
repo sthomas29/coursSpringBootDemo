@@ -1,12 +1,12 @@
-package fr.eni.m03_demo3.bll.mock;
+package fr.eni.demo.bll.mock;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import fr.eni.m03_demo3.bll.FormateurService;
-import fr.eni.m03_demo3.bo.Formateur;
+import fr.eni.demo.bll.FormateurService;
+import fr.eni.demo.bo.Formateur;
 
 @Service
 public class FormateurServiceBouchon implements FormateurService {

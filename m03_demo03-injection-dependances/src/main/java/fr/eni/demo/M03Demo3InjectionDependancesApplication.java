@@ -1,6 +1,6 @@
-package fr.eni.m03_demo3;
+package fr.eni.demo;
 
-import fr.eni.m03_demo3.controller.FormateurController;
+import fr.eni.demo.controller.FormateurController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
