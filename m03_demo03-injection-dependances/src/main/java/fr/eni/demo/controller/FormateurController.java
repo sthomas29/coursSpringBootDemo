@@ -2,6 +2,7 @@ package fr.eni.demo.controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import fr.eni.demo.bll.FormateurService;
@@ -12,8 +13,10 @@ public class FormateurController {
 
     private FormateurService formateurService;
 
-    // Injection via le constructeur directement
-    public FormateurController(FormateurService formateurService) {
+    // Pour lever l'ambiguîté du Bean à injecter, on ajouter l'annotation @Qualifier
+    // pour spécifier l'instance concrète à injecter.
+
+    public FormateurController(@Qualifier("formateurServiceImpl")  FormateurService formateurService) {
         System.out.println("Appel du constructeur FormateurController");
         this.formateurService = formateurService;
     }
